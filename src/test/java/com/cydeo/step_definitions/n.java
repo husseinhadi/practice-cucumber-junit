@@ -23,10 +23,10 @@ public class n {
     FilesPage filesPage = new FilesPage();
 
 
-    @Given("user on the dashboard page")
-    public void user_on_the_dashboard_page() {
-        loginPage.login();
-    }
+//    @Given("user on the dashboard page")
+//    public void user_on_the_dashboard_page() {
+//        loginPage.login();
+//    }
     @When("the user clicks the {string} module")
     public void the_user_clicks_the_module(String string) {
         basePage.navigateToModule(string);

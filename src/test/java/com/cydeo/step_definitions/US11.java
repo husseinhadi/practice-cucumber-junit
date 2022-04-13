@@ -1,5 +1,6 @@
 package com.cydeo.step_definitions;
 
+import com.cydeo.pages.LoginPage;
 import com.cydeo.pages.TalksPage;
 import com.cydeo.utilities.BrowserUtils;
 import com.cydeo.utilities.Driver;
@@ -13,6 +14,11 @@ import org.openqa.selenium.WebElement;
 public class US11 {
 
     TalksPage talksPage = new TalksPage();
+LoginPage loginPage=new LoginPage();
+    @Given("user on the dashboard page")
+    public void user_on_the_dashboard_page() {
+       loginPage .login();
+    }
 
     @When("user search {string} user from the search box")
     public void user_search_user_from_the_search_box(String user) {
